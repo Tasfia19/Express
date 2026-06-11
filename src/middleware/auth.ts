@@ -4,6 +4,8 @@ import config from "../config";
 import { pool } from "../db";
 import type { Roles } from "../types";
 
+
+
 export const auth = (...roles: Roles[]) => {
 	return async (req: Request, res: Response, next: NextFunction) => {
 		try {
@@ -81,7 +83,7 @@ export const authProfile = () => {
 					message: "profile not found",
 				});
 			}
-			
+
 			next();
 		} catch (error) {
 			next(error);
@@ -90,3 +92,23 @@ export const authProfile = () => {
 };
 
 
+
+
+// steps
+
+// [Incoming Request] 
+//        │
+//        ▼
+//  1. Extract Token ──► (Missing? 404 Unauthorized)
+//        │
+//        ▼
+//  2. Verify JWT    ──► (Invalid/Expired? Throws error to Catch block)
+//        │
+//        ▼
+//  3. DB Check      ──► (Not Found? 404 User/Profile Not Found)
+//        │
+//        ▼
+//  4. Role Check    ──► (Unauthorized Role? 404 Forbidden)
+//        │
+//        ▼
+//  [Call next()]    ──► (Moves to your actual route controller)
