@@ -25,6 +25,8 @@ export const initDB = async () => {
             id SERIAL PRIMARY KEY,
             user_id INT UNIQUE REFERENCES users(id) ON DELETE CASCADE,
             name VARCHAR(50),
+             email VARCHAR(20) UNIQUE NOT NULL,
+            password TEXT NOT NULL,
             age INT,
             gender VARCHAR(20) NOT NULL,
             phone VARCHAR(20) NOT NULL,

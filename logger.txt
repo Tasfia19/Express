@@ -157,3 +157,105 @@ Method--> GET Time--> 1781124442766 Url--> /api/
 Method--> POST Time--> 1781125461194 Url--> /api/user
 
 Method--> POST Time--> 1781125472868 Url--> /api/user
+
+Method--> POST Time--> 1781131288360 Url--> /profile
+
+Method--> POST Time--> 1781131350077 Url--> /profile
+
+Method--> POST Time--> 1781131425705 Url--> /profile
+
+Method--> GET Time--> 1781131513691 Url--> /profile/all
+
+Method--> POST Time--> 1781131644831 Url--> /profile
+
+Method--> POST Time--> 1781131655495 Url--> /profile
+
+Method--> POST Time--> 1781131754976 Url--> /profile
+
+Method--> POST Time--> 1781131792448 Url--> /profile
+
+Method--> POST Time--> 1781131835708 Url--> /profile
+
+Method--> GET Time--> 1781200120559 Url--> /profile/all
+
+Method--> POST Time--> 1781200179983 Url--> /profile
+
+Method--> POST Time--> 1781200198046 Url--> /profile
+
+Method--> GET Time--> 1781200206655 Url--> /profile/all
+
+Method--> GET Time--> 1781200228188 Url--> /profile/all
+
+Method--> GET Time--> 1781200270112 Url--> /profile/all
+
+Method--> GET Time--> 1781200909474 Url--> /profile/4
+
+Method--> GET Time--> 1781200921260 Url--> /profile/4
+
+Method--> GET Time--> 1781200928202 Url--> /profile/1
+
+Method--> GET Time--> 1781200947844 Url--> /profile/1
+
+Method--> GET Time--> 1781200955877 Url--> /profile/3
+
+Method--> GET Time--> 1781200962489 Url--> /profile/3
+
+Method--> GET Time--> 1781201088967 Url--> /profile/3
+
+Method--> GET Time--> 1781201143992 Url--> /profile/3
+
+Method--> PUT Time--> 1781201524620 Url--> /profile/3
+
+Method--> PUT Time--> 1781201593084 Url--> /profile/11
+
+Method--> DELETE Time--> 1781202042438 Url--> /profile/11
+
+Method--> DELETE Time--> 1781202056823 Url--> /profile/11
+
+Method--> DELETE Time--> 1781202082656 Url--> /profile/1
+
+Method--> GET Time--> 1781202136327 Url--> /profile/3
+
+Method--> GET Time--> 1781202142611 Url--> /profile/4
+
+Method--> POST Time--> 1781202159009 Url--> /profile
+
+Method--> POST Time--> 1781202172190 Url--> /profile
+
+Method--> POST Time--> 1781202182276 Url--> /profile
+
+Method--> POST Time--> 1781202192473 Url--> /profile
+
+Method--> GET Time--> 1781202200535 Url--> /profile/all
+
+Method--> PUT Time--> 1781202219116 Url--> /profile/11
+
+Method--> PUT Time--> 1781202239275 Url--> /profile/1
+
+Method--> DELETE Time--> 1781202260308 Url--> /profile/1
+
+Method--> GET Time--> 1781203517723 Url--> /profile/all
+
+Method--> POST Time--> 1781203540766 Url--> /auth/profile
+
+Method--> POST Time--> 1781203580488 Url--> /profile
+
+Method--> POST Time--> 1781203597177 Url--> /auth/profile
+
+Method--> POST Time--> 1781203738262 Url--> /auth/profile
+
+Method--> POST Time--> 1781204152733 Url--> /auth/profile
+
+Method--> POST Time--> 1781204177162 Url--> /profile
+
+Method--> POST Time--> 1781204381541 Url--> /auth/profile
+
+Method--> GET Time--> 1781204467933 Url--> /profile/all
+
+Method--> GET Time--> 1781204473289 Url--> /profile/all
+
+Method--> GET Time--> 1781205023114 Url--> /profile/all
+
+Method--> GET Time--> 1781205028776 Url--> /profile/all
+
+Method--> GET Time--> 1781205033474 Url--> /profile/all

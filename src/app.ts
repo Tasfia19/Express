@@ -41,8 +41,15 @@ app.use("/api/user/:id", userRouter);
 
 app.use("/profile", profileRouter);
 
+app.use("/profile/all", profileRouter);
+
+app.use("/profile/:id", profileRouter);
+
+
+
 //for auth
 app.use("/auth", authRouter);
+app.use("/auth/profile",authRouter)
 
 
 //global console.error

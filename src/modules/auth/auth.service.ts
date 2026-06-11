@@ -39,6 +39,45 @@ const loginUserIntoDB = async (payload: {
 	return { accessToken, refreshToken };
 };
 
+const loginProfileIntoDB = async (payload: {
+	email: string;
+	password: string;
+}) => {
+	const { email, password } = payload;
+
+	const profileData = await pool.query(
+		`SELECT * FROM profiles WHERE email = $1`,
+		[email],
+	);
+	
+	if (profileData.rows.length === 0) {
+		throw new Error("Invalid credentials");
+	}
+	const user = profileData.rows[0];
+
+	const matchPass = await bcrypt.compare(password, user.password);
+
+	
+	if (!matchPass) {
+		throw new Error("password doesn't match");
+	}
+	const jwtPayload = {
+		id: user.id,
+		email: user.email,
+		role: user.role,
+	};
+	console.log(jwtPayload);
+
+	const accessToken = jwt.sign(jwtPayload, config.secret as string, {
+		expiresIn: config.accessExpire,
+	});
+
+	const refreshToken = jwt.sign(jwtPayload, config.Refresh_Secret as string, {
+		expiresIn: config.refreshExpire,
+	});
+	return { accessToken, refreshToken };
+};
+
 const generateRefreshToken = async (token: string) => {
 	try {
 		if (!token) {
@@ -75,4 +114,5 @@ const generateRefreshToken = async (token: string) => {
 export const AuthService = {
 	loginUserIntoDB,
 	generateRefreshToken,
+	loginProfileIntoDB,
 };
